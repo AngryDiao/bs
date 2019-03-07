@@ -34,11 +34,4 @@ public class EntityBase implements Serializable{
         this.modifyTime = modifyTime;
     }
 
-    @Override
-    public String toString() {
-        return "BaseEntity{" +
-                "createTime=" + createTime +
-                ", modifyTime=" + modifyTime +
-                '}';
-    }
 }

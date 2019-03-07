@@ -5,10 +5,11 @@ import java.io.Serializable;
 public class MessageTitleInfo extends EntityBase implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
+	
 	/**消息标题ID*/
 	private Long messageTitleId;
 	/**消息标题内容*/
-	private Long messageTitle;
+	private String messageTitle;
 	/**用户ID*/
 	private Long userId;
 	
@@ -19,10 +20,10 @@ public class MessageTitleInfo extends EntityBase implements Serializable{
 	public void setMessageTitleId(Long messageTitleId) {
 		this.messageTitleId = messageTitleId;
 	}
-	public Long getMessageTitle() {
+	public String getMessageTitle() {
 		return messageTitle;
 	}
-	public void setMessageTitle(Long messageTitle) {
+	public void setMessageTitle(String messageTitle) {
 		this.messageTitle = messageTitle;
 	}
 	public Long getUserId() {
@@ -30,11 +31,6 @@ public class MessageTitleInfo extends EntityBase implements Serializable{
 	}
 	public void setUserId(Long userId) {
 		this.userId = userId;
-	}
-	@Override
-	public String toString() {
-		return "MessageTitleInfo [messageTitleId=" + messageTitleId + ", messageTitle=" + messageTitle + ", userId="
-				+ userId + ", createTime=" + createTime + ", modifyTime=" + modifyTime + "]";
 	}
 	
 	

@@ -16,6 +16,10 @@ public class MessageTitleInfoServiceImpl implements MessageTitleInfoService{
 	MessageTitleInfoMapper messageTitleInfoMapper;
 	
 	public List<MessageTitleInfo> findAllObject(){
-		return messageTitleInfoMapper.findAllObjects();
+		return messageTitleInfoMapper.findAllObject();
+	}
+	
+	public void insert(MessageTitleInfo messageTitleInfo) {
+		messageTitleInfoMapper.insert(messageTitleInfo);
 	}
 }
